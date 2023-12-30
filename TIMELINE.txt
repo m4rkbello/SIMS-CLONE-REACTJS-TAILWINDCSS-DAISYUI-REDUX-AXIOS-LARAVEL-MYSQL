@@ -10,3 +10,4 @@ TIMELINE SA SIMS-CLONE
 8. npx tailwindcss init -p
 9. npm i daisyui -karaan
 10. npm i -D daisyui@latest -bag-o
+11. 

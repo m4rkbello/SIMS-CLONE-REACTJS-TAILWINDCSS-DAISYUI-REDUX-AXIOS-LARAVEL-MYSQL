@@ -1,9 +1,7 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/authentication/Login";
 import Register from "./components/authentication/Register";
-import Footer from "./components/reusable/Footer";
-import NavBar from "./components/reusable/NavBar";
-import MainSidebar from './components/reusable/Sidebar/MainSidebar';
-
+import Main from "./components/index";
 
 
 
@@ -11,19 +9,30 @@ import MainSidebar from './components/reusable/Sidebar/MainSidebar';
 export default function App() {
 
   return (
-    <>
-    <Register />
+  <div>
+    <Router>
+    <Routes>
+    <Route exact path="/" element={<Main />} />
+    <Route exact path="/login" element={<Login />} />
+    <Route exact path="/Register" element={<Register />} />
+
+    </Routes>
+    </Router>
+
+
+
+
     {/* 
 
+     <Register />
         <Login />
-     
     
-      <NavBar />
+  
    
-      <MainSidebar />
-        <Footer />
+      //
+        
   */}
     
-    </>
+    </div>
   );
 }
