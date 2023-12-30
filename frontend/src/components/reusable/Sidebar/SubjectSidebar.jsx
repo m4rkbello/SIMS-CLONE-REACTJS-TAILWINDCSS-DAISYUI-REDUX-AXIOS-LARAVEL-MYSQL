@@ -5,11 +5,12 @@ function SubjectSidebar() {
     <div>
     <ul className="menu bg-base-400 rounded-box">
     <li>
-      <details open>
-        <summary>Records</summary>
+      <details close>
+        <summary>Subjects</summary>
         <ul>
-          <li><a>Submenu 1</a></li>
-          <li><a>Submenu 2</a></li>
+          <li><a>Subject Loads</a></li>
+          <li><a>Manage Subjects</a></li>
+          <li><a>Manage Sections</a></li>
         </ul>
       </details>
     </li>
