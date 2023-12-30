@@ -1,0 +1,12 @@
+TIMELINE SA SIMS-CLONE
+
+1. mkdir sims-clone
+2. npm create vite@latest frontend
+3. frontend > npm i 
+4. npm i concurrently - para mo run sa npm run dev ug php artisan serve
+5. npm version is npm i npm@8.8.0
+6. node version 10+
+7. npm install -D tailwindcss postcss autoprefixer
+8. npx tailwindcss init -p
+9. npm i daisyui -karaan
+10. npm i -D daisyui@latest -bag-o

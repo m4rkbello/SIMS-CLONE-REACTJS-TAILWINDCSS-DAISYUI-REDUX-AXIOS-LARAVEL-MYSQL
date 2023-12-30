@@ -1,0 +1,21 @@
+{
+  "name": "sims-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",  
+    "build": "vite build", 
+    "serve": "vite preview",
+    "start": "npm run m4rkbello", 
+    "m4rkbello": "concurrently \"npm run serve:backend\" \"npm run serve:frontend\"",
+    "serve:backend": "cd C:/laragon/www/SIMS-CLONE/backend && php artisan serve",
+    "serve:frontend": "cd C:/laragon/www/SIMS-CLONE/frontend && npm run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
