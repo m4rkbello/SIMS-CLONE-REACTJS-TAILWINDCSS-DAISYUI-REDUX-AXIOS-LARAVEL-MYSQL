@@ -6,9 +6,6 @@ import FinanceRecordsSidebar from './FinanceRecordsSidebar'
 import ExportImportSidebar from './ExportImportSidbar'
 
 
-
-
-
 export default function Sidebar() {
   return (
     <div>
