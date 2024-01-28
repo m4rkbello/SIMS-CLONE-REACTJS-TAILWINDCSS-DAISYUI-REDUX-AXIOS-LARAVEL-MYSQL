@@ -10,7 +10,7 @@ export default function main() {
   return (
     <div>
       <NavBar />
-      <MainContent />
+    
       <MainSidebar />
      
       <Footer />
