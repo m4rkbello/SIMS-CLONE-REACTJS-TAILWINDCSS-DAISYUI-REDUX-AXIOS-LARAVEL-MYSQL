@@ -8,7 +8,7 @@ export default class NavBar extends Component {
       <div>
       <div className="navbar bg-lime-950 shadow hover:shadow-2xl">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">M4RK</a>
+        <a className="btn btn-ghost text-xl">TEST M4RK</a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">

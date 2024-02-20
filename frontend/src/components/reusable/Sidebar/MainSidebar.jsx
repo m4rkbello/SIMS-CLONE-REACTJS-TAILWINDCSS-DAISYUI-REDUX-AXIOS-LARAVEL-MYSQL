@@ -17,10 +17,10 @@ export default function Sidebar() {
           <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
           <ul className="menu w-50 min-h-full bg-lime-950 shadow hover:shadow-2xl">
             {/* Sidebar content here */}
-            <li className='bg-lime-950 shadow hover:shadow-2xl'><Link to="/dashboard">Dashboard</Link></li>
-            <li><Link to="/walkinregistration">Walkin Registration</Link></li>
-            <li><a>Enrollees</a></li>
-            <li><a>Walkin Registration</a></li>
+            <li className='bg-lime-950 shadow hover:shadow-1xl'><Link to="/dashboard">Dashboard</Link></li>
+            <li className='bg-lime-950 shadow hover:shadow-1xl'><Link to="/walkinregistration">Walkin Registration</Link></li>
+            <li className='bg-lime-950 shadow hover:shadow-1xl'><a>Enrollees</a></li>
+            <li className='bg-lime-950 shadow hover:shadow-1xl'><a>Walkin Registration</a></li>
             <li><a>Masterlist</a></li>
             <li><a>Walkin Registration</a></li>
             <label>Manage</label>
@@ -40,7 +40,7 @@ export default function Sidebar() {
       </div>
       
 
-      <MainContent />
+      <MainContent/>
      
     </div>
   )
