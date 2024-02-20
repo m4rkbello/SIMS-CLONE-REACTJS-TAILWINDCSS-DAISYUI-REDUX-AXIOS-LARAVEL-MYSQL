@@ -6,6 +6,7 @@ import MainContent from "./components/reusable/content/MainContent";
 import ProtectedComponents from "./components/ProtectedComponents";
 import Dashboard from "./components/dashboard/Dashboard";
 
+
 export default function App() {
 
   return (
@@ -17,8 +18,9 @@ export default function App() {
           <Route exact path="/" element={<WrappedComponent />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/Register" element={<Register />} />
-          <Route exact path="/main" element={<MainContent />} />
+
           <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/walkinregistration" element={<MainContent />} />
 
         </Routes>
       </Router>

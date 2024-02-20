@@ -6,7 +6,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-      <div className="navbar bg-cyan-500">
+      <div className="navbar bg-lime-950 shadow hover:shadow-2xl">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">M4RK</a>
       </div>
