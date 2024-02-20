@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';  // Import PropTypes
 import withAuth from './withAuth';
 import Wrappedcomponent from '../components/index';
