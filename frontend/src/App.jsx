@@ -10,6 +10,7 @@ export default function App() {
 
   return (
     <div>
+
       <Router>
         <Routes>
           <Route exact path="/auth" element={<ProtectedComponents isAuthenticated={false} />} />
