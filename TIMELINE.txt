@@ -10,4 +10,6 @@ TIMELINE SA SIMS-CLONE
 8. npx tailwindcss init -p
 9. npm i daisyui -karaan
 10. npm i -D daisyui@latest -bag-o
-11. npm i axios
+11. npm i axios 
+12. composer require laravel/sanctum
+13. php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
