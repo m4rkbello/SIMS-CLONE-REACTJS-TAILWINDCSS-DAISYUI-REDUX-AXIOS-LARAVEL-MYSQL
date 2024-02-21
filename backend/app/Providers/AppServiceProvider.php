@@ -21,6 +21,6 @@ class AppServiceProvider extends ServiceProvider
     {
         //GAMIT KAAYONG BUANG!
         Schema::defaultStringLength(191);
-        Schema::defaultCharacterSet('utf8mb4');
+      
     }
 }
