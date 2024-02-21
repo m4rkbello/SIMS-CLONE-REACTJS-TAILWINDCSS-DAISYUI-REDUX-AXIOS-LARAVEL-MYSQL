@@ -31,3 +31,5 @@ use Laravel\Sanctum\HasApiTokens;
 ->go to User.php 
 18. MAKE Api/AuthController
 php artisan make:controller Api/AuthController
+19. MAKE MODEL MODEL, MIGRATION, CONTROLLER -m migration -c controller -resources
+->php artisan make:model Product -m -c -r    
