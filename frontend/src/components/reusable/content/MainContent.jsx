@@ -1,9 +1,15 @@
+import NavBar from "../NavBar";
+import Sidebar from "../Sidebar/MainSidebar";
 
 
 
 function MainContent() {
   return (
+    <div>
+    <NavBar />
+    <Sidebar />
     <div className="flex items-center ... pl-05 pr-20 pt-20 pb-05">
+   
     <div>
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
@@ -32,6 +38,9 @@ function MainContent() {
 </div>
     </div>
   </div>
+
+    </div>
+
   )
 }
 

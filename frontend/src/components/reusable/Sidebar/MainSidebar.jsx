@@ -39,8 +39,10 @@ export default function Sidebar() {
 
       </div>
       
+{/**
+<MainContent/>
 
-      <MainContent/>
+*/}
      
     </div>
   )
