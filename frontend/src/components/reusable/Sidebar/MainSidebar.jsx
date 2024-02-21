@@ -4,12 +4,13 @@ import ProgramSidebar from './ProgramSidebar'
 import FinanceRecordsSidebar from './FinanceRecordsSidebar'
 import ExportImportSidebar from './ExportImportSidbar'
 import { Link } from 'react-router-dom'
-import MainContent from '../content/MainContent'
+
+
 
 
 export default function Sidebar() {
   return (
-    <div className="flex p-0 px-0 py-0 ps-0 pe-0 pt-0 pr-0 m-0 mx-0 my-0 ms-0 me-0 mt-0 mr-0">
+    <div className="p-0 px-0 py-0 ps-0 pe-0 pt-0 pr-0 m-0 mx-0 my-0 ms-0 me-0 mt-0 mr-0">
       <div className="drawer lg:drawer-open overflow-hidden">
         <div id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 
@@ -39,10 +40,9 @@ export default function Sidebar() {
 
       </div>
       
-{/**
-<MainContent/>
 
-*/}
+
+
      
     </div>
   )
