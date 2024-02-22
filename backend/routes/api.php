@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,22 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+
+//FOR AUTHENTICATION
 Route::post('register', [AuthController::class, "register"]);
 Route::post('logout', [AuthController::class, "logout"]);
 Route::post('login', [AuthController::class, "login"]);
+
+//CREATE/READ/UPDATE/DELETE
+Route::resource("products", ProductController::class);
+
+
+
+
+
+
+
+
+
+
+
