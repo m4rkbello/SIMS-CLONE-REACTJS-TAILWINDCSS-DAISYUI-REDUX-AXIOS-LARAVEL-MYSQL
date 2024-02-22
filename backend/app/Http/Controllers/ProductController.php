@@ -7,12 +7,20 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware("auth:sanctum",["except"=>["index","show"]]);
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $products=Product::all();
+        return response()->json([
+            "success"=>true,
+            "products"=>$products,
+        ]);
     }
 
     /**
@@ -28,15 +36,35 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            "title"=>"required",
+            "description"=>"required",
+            "price"=>"required"
+
+        ]);
+
+        $product=Product::create([
+            "title"=>$request->title,
+            "description"=>$request->description,
+            "price"=>$request->price
+        ]);
+
+        return response()->json([
+            "success"=>true,
+            "product"=>$product,
+        ]);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show($id)
     {
-        //
+        $product=Product::find($id);
+        return response()->json([
+            "success"=>true,
+            "product"=>$product,
+        ]);
     }
 
     /**
@@ -50,16 +78,29 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request,$id)
     {
-        //
+        $product=Product::find($id);
+
+        $product->update($request->all());
+
+        return response()->json([
+            "message"=>true,
+            "product"=>$product,
+        ]);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Product $product)
+    public function destroy($id)
     {
-        //
+        Product::find($id)->delete();
+
+        return response()->json([
+            "success"=>true,
+            "message"=>"The product has been deleted successfully!",
+        ]);
+
     }
 }
