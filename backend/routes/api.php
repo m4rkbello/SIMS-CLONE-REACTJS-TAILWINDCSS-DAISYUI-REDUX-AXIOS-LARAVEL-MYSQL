@@ -30,6 +30,10 @@ Route::post('login', [AuthController::class, "login"]);
 Route::resource("products", ProductController::class);
 
 
+// Route::middleware('auth:sanctum')->group(function () {
+//     Route::post('/logout', [AuthController::class, 'logout']);
+// });
+
 
 
 
